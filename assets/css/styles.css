@@ -194,6 +194,8 @@ p {
 	border-radius: 2%;
 }
 
-p{
-	font-size: 10rem ;
+
+
+h1, h2, h3, h4{
+	font-size: 6rem;
 }
