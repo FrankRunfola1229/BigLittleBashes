@@ -143,14 +143,11 @@ p {
 	object-fit: cover;
 }
 
-.containerCarousel{
-	margin-top: 10rem;
-	margin-bottom: 3rem;
-	width: 75%;
-}
 
-#containerPackages{
+
+#containerHeader{
 	margin-top: 7rem;
+	margin-bottom: 3rem;
 	width: 75%;
 }
 
