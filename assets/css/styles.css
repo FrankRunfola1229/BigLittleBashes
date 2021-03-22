@@ -30,17 +30,21 @@ p {
 }
 
 
+.navbar{	
+	z-index: 999;
+}
+
+.navbar-nav {
+
+	padding-left: 2rem;
+}
+   
 #mainNav {
 	margin-bottom: 10em;
 	font-weight: 900;
 	font-family: 'Montserrat';
 }
 
-
-.navbar{	
-	z-index: 999;
-}
-   
 @media (max-width: 720px) {
 	#mainNav .navbar-toggler {
 		font-size: 100%;
