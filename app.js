@@ -37,7 +37,7 @@ app.use("/ourStoryRoutes", ourStoryRoutes)
 app.use("/packagesRoutes", packagesRoutes)
 
 
-const port = process.env.PORT || 8080
+const port = '*'//process.env.PORT || 8080
 app.set('port', port);
 
 app.listen(port, () => {
@@ -45,5 +45,3 @@ app.listen(port, () => {
     console.log(`Directory: ${__dirname}`)
     console.log("Port: " + port)
 })
-
-app.get('/', (req, res) => res.send('Hello World!'))
