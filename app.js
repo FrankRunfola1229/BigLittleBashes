@@ -44,8 +44,6 @@ app.listen(port, () => {
     console.log("Server Started!..")
     console.log(`Directory: ${__dirname}`)
     console.log("Port: " + port)
-
-    app._router.stack.forEach((r) => {
-        if (r.route && r.route.path) console.log(r.route.path)
-    })
 })
+
+app.get('/', (req, res) => res.send('Hello World!'))
