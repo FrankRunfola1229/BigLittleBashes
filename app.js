@@ -37,13 +37,13 @@ app.use("/ourStoryRoutes", ourStoryRoutes)
 app.use("/packagesRoutes", packagesRoutes)
 
 
-const port = 3000
-app.set('port', process.env.PORT || port);
+const port = process.env.PORT || 3000
+app.set('port', port);
 
 app.listen(port, () => {
     console.log("Server Started!..")
     console.log(`Directory: ${__dirname}`)
-    console.log("Port: " + process.env.PORT)
+    console.log("Port: " + port)
 
     app._router.stack.forEach((r) => {
         if (r.route && r.route.path) console.log(r.route.path)
