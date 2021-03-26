@@ -136,16 +136,6 @@ p {
 
 
 
-#containerHeader{
-	margin-top: 7rem;
-	margin-bottom: 3rem;
-	width: 85vw;
-}
-#containerHeader img{
-	object-fit: cover;
-}
-
-
 #containerPackagesText{
 	margin-top: 3rem;
 	width: 85vw;	
@@ -187,7 +177,17 @@ p {
 }
 
 
-.landing-container {
+
+#containerHeader{
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	width: 85vw;
+}
+#containerHeader img{
+	object-fit: cover;
+}
+
+.containerCards {
 	Background-color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -197,16 +197,28 @@ p {
 	margin: 30px auto 30px auto;
 	padding: 5px 150px 30px;
  }
+
+ .containerCards p{
+	 text-align: center;
+	 font-size: 1.3rem;
+ }
+
+ @media only screen and (max-width: 900px) {
+	.containerCards {
+	   padding-left: 5px;
+	   padding-right: 5px;
+	}
+ }
  
  .card {
+    object-fit: cover;
 	margin: 7px 10px;
-	height: 185px;
-	width: 185px;
-	border: None;
+	height: 165px;
+	width: 175px;
 	box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
 	background-color: white;
 	vertical-align: middle;
-	Padding: 0px 5px;
+	Padding: 5px 5px;
  }
 
  .card:hover {
@@ -217,4 +229,5 @@ p {
 	background-color: #41474d;
  }
  
+
  
