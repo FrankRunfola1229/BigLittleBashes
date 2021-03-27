@@ -5,5 +5,5 @@
     "editor.formatOnSave": true,
     "liveServer.settings.ChromeDebuggingAttachment": false,
     "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
 }
