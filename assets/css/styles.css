@@ -1,23 +1,79 @@
-/* Show it is fixed to the top */
+*, *::after, *::before {
+	box-sizing: border-box;
+  }
 
+  html{
+	font-family: Montserrat;
+}
 @font-face {
 	font-family: 'HelloHoney';
 	src: url('/assets/fonts/hello\ honey.otf'); /* IE9 Compat Modes */
   }
 
-html{
-	font-family: Montserrat;
+  .helloHoney{
+	font-family: 'HelloHoney';
 }
 
-  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+
+h1{
 	text-align: center;
 	font-family: 'HelloHoney';
-	margin-bottom: 0;
+	margin-top: 1rem;
+	padding-top: 1em;
+}
+h2, h3, h4, h5, h6{
+	text-align: center;
+	font-family: 'HelloHoney';
+	margin-top: 3rem;
 }
 
-.helloHoney{
-	font-family: 'HelloHoney';
+h1 { font-size: 4em; }
+h2 { font-size: 2.5em; }
+
+
+@media only screen and (max-width: 1200px) {
+	h1 { font-size: 3em; }
+	h2 { font-size: 1.75em; }
 }
+@media only screen and (max-width: 900px) {
+	h1 { font-size: 2em; }
+	h2 { font-size: 1.75em; }
+}
+
+@media only screen and (max-width: 420px) {
+	h1 { font-size: 1.7em; }
+	h2 { font-size: 1.5em; }
+}
+@media only screen and (max-width: 370px) {
+	h1 { font-size: 1.7em; }
+	h2 { font-size: 1.5em; }
+}
+@media only screen and (max-width: 370px) {
+	h1 { font-size: 1.4em; }
+	h2 { font-size: 1.4em; }
+}
+@media only screen and (max-width: 310px) {
+	h1 { font-size: 1.2em; }
+	h2 { font-size: 1.2em; }
+}
+
+
+p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	font-weight: 300;
+  }
+
+  p::first-letter {
+	font-size: 200%;
+	color: pink;
+	font-weight: 400;
+  }
+  
+li{
+	padding-left: .5rem;
+}
+
 
 /***********************************************************/
 /*                      NAVIGATION                         */
@@ -35,104 +91,100 @@ html{
 a:hover{
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
+/****** NAVIGATION Collapse Button *****/ 
 .navbar-toggler{
-	margin:.7rem;
-	padding: 1.2rem;;
+	margin-top: 2.5rem;
+	margin-left: .7rem;
+	
 }
+
+/****** NAVIGATION  DROP DOWN MENU *****/ 
+.navbar-nav {
+    padding-left: 1.2rem;
+	padding-bottom: 0;
+	margin-top: 2rem;
+	background-color:whitesmoke;
+	width: 35%;
+	color: black;
+}
+
+/****** Overwrite _navbar.scss nav links in drop down menu *****/ 
 .navbar-light .navbar-nav .nav-link{
 	color: black;
 }
 
-
-
-/***********************************************************/
-/*        NAVIGATION   DROP DOWN MENU                      */
-/***********************************************************/
-.navbar-nav {
-	line-height: 1.5;
-    padding-left: 1.2rem;
-	padding-bottom: 0;
-	margin-top: .3rem;
-	background-color:whitesmoke;
-	width: 35%;
+.navbar-light .navbar-toggler{
+	color: pink;
+	border: 4px solid pink;
 }
 
-
-@media (max-width: 720px) {
-	#mainNav .navbar-toggler {
-		font-size: 100%;
-		padding: 0.6rem;
+.navbar-toggler{
+	padding:.2rem;
+}
+#navIcon{
+	height: 60px;
+	width: 60;
+	
+}
+@media only screen and (max-width: 350px) {
+	#navIcon{
+		height: 45px;
+		width: 45px;
 	}
 }
-
-@media (max-width: 600px) {
-	.navbar-brand {
-		display: inline-block;
-		padding-top: 0.3125rem;
-		padding-bottom: 0.3125rem;
-		margin: 1rem;
-		font-size: 18px;
-		line-height: inherit;
-		white-space: nowrap;
-	}
-}
-
-@media (max-width: 430px) {
-	.navbar-brand {
-		display: inline-block;
-		padding-top: 0.3125rem;
-		padding-bottom: 0.3125rem;
-		margin: 0.2rem;
-		font-size: 0.8rem;
-		line-height: inherit;
-		white-space: nowrap;
-	}
-}
-
 
 /***********************************************************/
 /*                      CONTAINERS                         */
 /***********************************************************/
-
+.container {
+    margin-top: 3rem;
+    width: 90vw;
+	padding:0rem 2rem;
+ }
 #containerHeader{
-	width:65vw;
-	margin: 11rem auto 5rem auto;
+	width:60vw;
+	margin: 13rem auto 5rem auto;
+
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#containerText{
+	margin-top:2rem;
+	margin-bottom: 2rem;
+	width: 60vw;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
 }
 
 #containerCarousel{
-	width:65vw;
-	margin: 11rem auto 5rem auto;
+	width:40vw;
+	margin: 14rem auto 3rem auto;	
 }
 
-#containerText{
-	margin-top:11rem;
-	margin-bottom: 2rem;
-	width: 90vw;
+@media only screen and (max-width: 500px) {
+	#containerHeader, #containerCarousel, #containerText{
+		width:87vw;
+	}
 }
 
 #containerText img{
 	object-fit: cover;
 }
 
-#containerPackagesText{
-	margin-top: 11rem;
-	width: 85vw;	
-}
 
-.shadow-1 {
-    box-shadow: 0 0.25rem 0.125rem 0 rgb(0 0 0 / 3%);
-}
- .container {
-    margin-top: 3rem;
-    width: 90vw;
- }
+/***********************************************************/
+/*                      PAGE LOADER                        */
+/***********************************************************/
 
-p {
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-li{
-	padding-left: .5rem;
-}
-
+.preloader {
+	align-items: center;
+	background: rgb(23, 22, 22);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 10rem;
+	transition: opacity 0.2s linear;
+	width: 100%;
+	z-index: 9999;
+  }
