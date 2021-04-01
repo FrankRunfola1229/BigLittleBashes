@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+  <script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,7 +20,27 @@
   <!--              NAVBAR                     -->
   <!-- *************************************** -->
 
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <nav id="mainNav" class="navbar-light  fixed-top">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+      <i class="fas fa-align-justify"></i>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" aria-current="page" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/pages/ourStory.html">Our Story</a>
+        <a class="nav-item nav-link" href="/pages/packages.html">Packages</a>
+        <a class="nav-item nav-link" href="/pages/process.html">Process</a>
+        <a class="nav-item nav-link" href="/pages/blog.html">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--
+
+
+    <nav id="mainNav" class="navbar  navbar-light fixed-top bg-light">
     <a class="navbar-brand js-scroll-trigger" href="/index.html">
       <img id="logo" src="/assets/img/BLB_NavBar.jpg">
     </a>
@@ -31,72 +51,28 @@
 
     <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="/index.html">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/ourStory.html"> Our Story <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/ourProcess.html"> Our Process <span class="sr-only"></span></a>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/packages.html">Packages <span class="sr-only"></span></a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true">
-            Packages
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="./pages/packages/birthdays.html">Birthdays</a>
-            <a class="dropdown-item" href="./pages/packages/eastMeetsWest.html">East Meets West</a>
-            <a class="dropdown-item" href="./pages/packages/holidays.html">Holidays</a>
-            <a class="dropdown-item" href="./pages/packages/milestones.html">Milestones</a>
-            <a class="dropdown-item" href="./pages/packages/showers.html">Showers</a>
-            <a class="dropdown-item" href="./pages/packages/weddings.html">Weddings</a>
-          </div>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/blog.html">Blog<span class=" sr-only"></span></a>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/honeybook.html">Honeybook – Client Portal <span class="
-              sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/pages/contactUs.html">Contact Us <span class=" sr-only"></span></a>
-        </li>
-
+        <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a> </li>
+        <li class="nav-item active"><a class="nav-link" href="/ourStory.html">Our Story</a> </li>
+        <li class="nav-item active"><a class="nav-item nav-link" href="/pages/packages.html">Packages</a></li>
       </ul>
     </div>
   </nav>
+-->
 
-
-
-  <div id="containerHeader" class="container">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--                          Carousel                                       -->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <div id="containerCarousel">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/assets/img/shower.JPG" class="d-block w-100" alt="...">
+          <img src="/assets/img/setTable1.jpeg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/eastMeetsWest.jpg" class="d-block w-100" alt="...">
+          <img src="/assets/img/twoWild.jpeg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/weddings.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/shower.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/holidays.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/milestones.jpg" class="d-block w-100" alt="...">
+          <img src="/assets/img/setTable2.jpeg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -107,56 +83,32 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
     </div>
   </div>
 
 
-
-  <div class="container" style="width:75%">
-
-    <h4> Welcome to Big Little Bashes!</h4>
+  <div class="container shadow-1" style="width:90%;">
+    <h1> Welcome to Big Little Bashes!</h1>
     <br>
+    <hr>
     <p>
-      Exclusive Party Design and Premier Indian Wedding Planner in Buffalo, NY. We specialize in curating exclusive
-      celebrations that are sentimental and intimate, regardless of scale or occasion. Whether it's a birthday party,
-      grand wedding or cultural ceremony, we work hard to imbibe YOUR personal touch to the affair.
+      We specialize in curating exclusive celebrations that are sentimental and intimate, regardless of scale or occasion. Whether it's a birthday party, grand wedding or cultural ceremony, we work hard to imbibe YOUR personal
+      touch to the affair.
     </p>
     <p>
-      We pride ourselves in executing unique and creative concepts and themes, and especially enjoy bringing
-      multi-cultural and out-of-the-box concepts to life in our event design and collateral.
-      Currently our planning packages include Birthdays, Weddings, Showers and Ceremonial functions/rituals.
-      We are happy to customize the suite of services provided to work within your vision and expectations.
+      We pride ourselves in executing unique and creative concepts and themes. We especially enjoy bringing multi-cultural and out-of-the-box concepts to life in our event design and collateral. Currently our planning packages
+      include Birthdays, Weddings, Showers and Cultural events. We are happy to customize the suite of services provided to work within your vision and expectations.
     </p>
     <p>
-      Our growing network in the party planning industry is one of our strongest assets. While we are happy to provide
-      thoughtful recommendations on vendors, we are always willing to partner with new ones to deliver your ideas.
-      Thank you for taking the time to take a look at our website! Please feel free to reach out if you have any
-      questions.
-      We look forward to celebrating all your Big Little moments!
+      Our growing network in the party planning industry is one of our strongest assets. While we are happy to provide thoughtful recommendations on vendors, we are always willing to partner with new ones to deliver your
+      ideas.Thank you for taking the time to take a look at our website!
     </p>
+    <h2 class="helloHoney">
+      We look forward to celebrating<br>
+      all your Big Little moments!
+    </h2>
+    <br>
   </div>
-
-
-  <script>
-    var myCarouselEl = document.querySelector('#myCarousel')
-    var carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
-
-    myCarouselEl.addEventListener('slid.bs.carousel', function (event) {
-      carousel.to('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-    })
-
-    carousel.to('1') // Will start sliding to the slide 1 and returns to the caller
-    carousel.to('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
-
-    $(document).ready(function () {
-      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 200  // 2 seconds
-    });
-  </script>
 
 </body>
 
