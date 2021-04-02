@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,90 +12,136 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!--***************************************  -->
+    <!--              PAGE LOADER               -->
+    <!-- *************************************** -->
+    <!--https://css-tricks.com/lets-make-a-fancy-but-uncomplicated-page-loader/-->
+    <div class="preloader">
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0">
+            <circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2">
+                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite" />
+                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2">
+                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite" />
+                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+
+    <!--***************************************  -->
     <!--              NAVBAR                     -->
     <!-- *************************************** -->
 
-    <nav id="mainNav" class="navbar-light  fixed-top">
-
+    <nav id="mainNav" class="navbar-light fixed-top">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
+            <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" aria-current="page" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/pages/ourStory.html">Our Story</a>
-                <a class="nav-item nav-link" href="/pages/packages.html">Packages</a>
                 <a class="nav-item nav-link" href="/pages/process.html">Process</a>
+                <a class="nav-item nav-link" href="/pages/packages.html">Packages</a>
                 <a class="nav-item nav-link" href="/pages/blog.html">Blog</a>
             </div>
         </div>
     </nav>
 
+    <div style="margin-top:12rem;"></div>
+    <!--*********************************************************************-->
+    <!--                             CARD                                   -->
+    <!--*********************************************************************-->
+    <div class="card cardPackage text-center">
+        <div class="card-header">
+            <h1>Style Shoot</h1>
+        </div>
+        <div class="card-body">
+            <img class="card-img-top" src="/assets/img/literaTeaParty1.jpeg" alt="Card image cap">
+            <h2> Litera-Tea Party</h2>
+            <ul class="packageBullet">
+                <li>Customize suite of services on your special event or style shoot needs</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore vel sed.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore vel sed.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore vel sed.</li>
+            </ul>
+        </div>
+    </div>
 
-
-    <div id="containerHeader" class="container">
-        <h3>Build a Birthday</h3>
-
-        <h3> Two Wild</h3>
-        <p> Party Planning services for kids and adults.
-            Up to 3 meetings/ consultations to understand your theme and set expectations
-            Budget management Recommended vendor list Communication & payment management.
-            Create a design and Mood board. We'll work together to gather inspiration and make sure your vision
-            is achieved via event stationery, staging and other related creatives Attend all meetings with other
-            vendors/services providers with you or on your behalf Set up and clean up of all party creatives,
-            rentals and props Plan and run 2 unique and personalized party games for guests Timeline and layout
-            assistance of the event Day of coordination. All of the day of logistics will be worked out before hand so that you can have
-            a stress-free day Additional onsite assistance on the day of the event Love is in the Details
-            Image- Bridesmaid picture Full wedding planning services.
-
-            2 Pre-wedding consultations and on-going communication thereafter as needed
-            Budget management Vendor recommendations & bookings. You'll receive a list of the vendors I recommend as
-            well as help with contacting and booking them Communication & payment management via a structured
-            payment plan Create a Mood Board to capture your vision and expectations Attend all meetings with other
-            vendors/services providers with you or your behalf
-            Detailed day-of timeline management and execution Rehearsal coordination. This includes booking and
-            organizing the rehearsal.
-            Day of coordination with additional on-site assistant (if needed) to ensure everything runs smoothly. My
-            team and I’s full, undivided attention and support navigating the wedding planning process
-            Shoulder to lean on and earpiece for your thoughts and concerns
-            Managing all inter-personal relationships with vendors, family, wedding party members and the like!
-        </p>
-
-        <h3> Without a Hitch</h3>
-
-        <p> Wedding coordination services for the day of your wedding and rehearsal
-            3 Pre-Wedding consultations to map out details of the event
-            Recommended vendor list
-            Day of timeline review and execution
-            Day of coordination
-            Full execution of implementation of your vision and aesthetic
-            Rehearsal Coordination
-        </p>
-
-        <h3> Singin’ in the Shower</h3>
-        <p>
-            Image- Number 5 with floral centerpiece on table
-            Baby or Bridal Shower Planning services, Bachelorettes, Stag Parties, Jack and Jill Party
-            Up to 3 meetings/ consultations to understand your theme and set expectations
-            Budget management and structured payment plan set up for other vendors
-            Recommended vendor list
-            Work with you to create a Mood board. We'll work together to gather inspiration and make sure your
-            vision is achieved via event stationery, staging and other related creatives
-            Attend all meetings with other vendors/services providers with you or on your behalf
-            Set up and clean-up of all party creatives, rentals and props
-            Plan and run 3 unique and personalized party games for guests
-            Timeline and layout assistance of the event
-            Day of coordination and any additional onsite assistance on the day of the event.
-        </p>
+    <div class="card cardPackage text-center">
+        <div class="card-header">
+            <h1>Build a Birthday</h1>
+        </div>
+        <div class="card-body">
+            <img class="card-img-top" src="/assets/img/birthday.jpeg" alt="Card image cap">
+            <h2> Two Wild</h2>
+            <ul class="packageBullet">
+                <li>Party Planning services for kids and adults.</li>
+                <li>Up to 3 meetings/ consultations to understand your theme and set expectations Budget management Recommended vendor list Communication & payment management </li>
+                <li> Create a design and Mood board. We'll work together to gather inspiration and make sure your vision is achieved via event stationery, staging and other related creatives Attend all meetings with other
+                    vendors/services providers with you or on your behalf Set up and clean up of all party creatives, rentals and props Plan and run 2 unique and personalized party games for guests Timeline and layout
+                    assistance of the event Day of coordination
+                </li>
+                <li> All of the day of logistics will be worked out before hand so that you can have a stress-free day Additional onsite assistance on the day of the event Love is in the Details picture Full wedding planning
+                    services</li>
+            </ul>
+        </div>
     </div>
 
 
+    <div class="card cardPackage text-center">
+        <div class="card-header">
+            <h1>Weddings</h1>
+        </div>
+        <div class="card-body">
+            <img class="card-img-top" src="/assets/img/wedding1.jpeg" alt="Card image cap">
+            <h2>Classical Romance</h2>
+            <ul class="packageBullet">
+                <li>2 Pre-wedding consultations and on-going communication thereafter as needed</li>
+                <li>Budget management Vendor recommendations & bookings</li>
+                <li>You'll receive a list of the vendors I recommend as
+                    well as help with contacting and booking them Communication & payment management via a structured
+                    payment plan Create a Mood Board to capture your vision and expectations Attend all meetings with other
+                    vendors/services providers with you or your behalf</li>
+                <li> Detailed day-of timeline management and execution Rehearsal coordination. This includes booking and
+                    organizing the rehearsal.</li>
+                <li> Day of coordination with additional on-site assistant (if needed) to ensure everything runs smoothly</li>
+                <li>My
+                    team and I’s full, undivided attention and support navigating the wedding planning process
+                    Shoulder to lean on and earpiece for your thoughts and concerns
+                    Managing all inter-personal relationships with vendors, family, wedding party members and the like!</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--*********************************************************************-->
+    <!--                             FOOTER                                  -->
+    <!--*********************************************************************-->
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/lavidarunfola/?hl=en" role="button"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rohini-runfola-4138649" role="button"><i class="fab fa-linkedin-in"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://biglittlebashes.com/">BigLittleBashes</a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

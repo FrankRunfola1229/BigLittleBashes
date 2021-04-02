@@ -1,25 +1,20 @@
-*, *::after, *::before {
-	box-sizing: border-box;
-  }
+*, *::after, *::before {box-sizing: border-box; }
 
-  html{
-	font-family: Montserrat;
-}
+  html{	font-family: Montserrat;}
+
 @font-face {
 	font-family: 'HelloHoney';
 	src: url('/assets/fonts/hello\ honey.otf'); /* IE9 Compat Modes */
   }
 
-  .helloHoney{
-	font-family: 'HelloHoney';
-}
+ .helloHoney{font-family: 'HelloHoney';}
 
 
 h1{
 	text-align: center;
 	font-family: 'HelloHoney';
-	margin-top: 1rem;
-	padding-top: 1em;
+	margin-top: .1rem;
+	padding-top: .5em;
 }
 h2, h3, h4, h5, h6{
 	text-align: center;
@@ -27,36 +22,24 @@ h2, h3, h4, h5, h6{
 	margin-top: 3rem;
 }
 
-h1 { font-size: 4em; }
-h2 { font-size: 2.5em; }
-
+h1 { font-size: 3.5em; }
 
 @media only screen and (max-width: 1200px) {
 	h1 { font-size: 3em; }
-	h2 { font-size: 1.75em; }
-}
-@media only screen and (max-width: 900px) {
-	h1 { font-size: 2em; }
-	h2 { font-size: 1.75em; }
 }
 
 @media only screen and (max-width: 420px) {
 	h1 { font-size: 1.7em; }
-	h2 { font-size: 1.5em; }
 }
 @media only screen and (max-width: 370px) {
 	h1 { font-size: 1.7em; }
-	h2 { font-size: 1.5em; }
 }
 @media only screen and (max-width: 370px) {
 	h1 { font-size: 1.4em; }
-	h2 { font-size: 1.4em; }
 }
 @media only screen and (max-width: 310px) {
 	h1 { font-size: 1.2em; }
-	h2 { font-size: 1.2em; }
 }
-
 
 p {
 	font-size: 1.1rem;
@@ -64,16 +47,23 @@ p {
 	font-weight: 300;
   }
 
-  p::first-letter {
-	font-size: 200%;
+p::first-letter {
+	font-size: 300%;
 	color: pink;
-	font-weight: 400;
-  }
+	font-weight: 600;
+}
   
-li{
-	padding-left: .5rem;
+li{	padding-left: .5rem;}
+
+
+.packageBullet li{
+	padding-bottom: .5rem;;
 }
 
+ol, ul {
+    padding-left: 0rem;
+	text-align: left;
+}
 
 /***********************************************************/
 /*                      NAVIGATION                         */
@@ -88,15 +78,12 @@ li{
 	font-weight: 450;	
 }
 
-a:hover{
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
+a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
 
 /****** NAVIGATION Collapse Button *****/ 
 .navbar-toggler{
-	margin-top: 2.5rem;
-	margin-left: .7rem;
-	
+	margin-top: 3.5rem;
+	margin-left: 1rem;	
 }
 
 /****** NAVIGATION  DROP DOWN MENU *****/ 
@@ -105,28 +92,23 @@ a:hover{
 	padding-bottom: 0;
 	margin-top: 2rem;
 	background-color:whitesmoke;
-	width: 35%;
+	width: 30%;
 	color: black;
 }
 
 /****** Overwrite _navbar.scss nav links in drop down menu *****/ 
-.navbar-light .navbar-nav .nav-link{
-	color: black;
-}
+.navbar-light .navbar-nav .nav-link{ color: black;}
 
 .navbar-light .navbar-toggler{
-	color: pink;
-	border: 4px solid pink;
+	color: black;
+	border: 1px solid black;
+	background-color: white;
 }
 
-.navbar-toggler{
-	padding:.2rem;
-}
-#navIcon{
-	height: 60px;
-	width: 60;
-	
-}
+.navbar-toggler {padding:.4rem;}
+
+#navIcon {height: 60px; width: 60;}
+
 @media only screen and (max-width: 350px) {
 	#navIcon{
 		height: 45px;
@@ -138,37 +120,73 @@ a:hover{
 /*                      CONTAINERS                         */
 /***********************************************************/
 .container {
-    margin-top: 3rem;
+    margin-top: 2rem;
     width: 90vw;
 	padding:0rem 2rem;
  }
-#containerHeader{
-	width:60vw;
-	margin: 13rem auto 5rem auto;
 
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
-#containerText{
+#containerText {
 	margin-top:2rem;
 	margin-bottom: 2rem;
 	width: 60vw;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
 }
 
-#containerCarousel{
+#containerContent {
 	width:40vw;
 	margin: 14rem auto 3rem auto;	
 }
 
-@media only screen and (max-width: 500px) {
-	#containerHeader, #containerCarousel, #containerText{
-		width:87vw;
+
+/***********************************************************/
+/*                      CARD                               */
+/***********************************************************/
+
+.card {
+	width: 60vw; 
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card, .cardPackage {
+	width: 60vw; 
+	margin: 7rem auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body {
+    padding: 1rem 2rem;
+}
+
+ .cardPackage {
+	margin: 0 auto 5rem auto;
+}
+
+@media only screen and (max-width: 1000px) {
+	#containerContent{
+		width:60vw;
 	}
 }
 
-#containerText img{
-	object-fit: cover;
+@media only screen and (max-width: 900px) {
+	.card, #containerContent,#containerText{
+		width:75vw;
+	}
 }
+@media only screen and (max-width: 800px) {
+	.card, #containerContent{
+		width:80vw;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.card, #containerContent,#containerText{
+		width:85vw;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.card, #containerContent,#containerText{
+		width:90vw;
+	}
+}
+
 
 
 /***********************************************************/
@@ -183,7 +201,7 @@ a:hover{
 	justify-content: center;
 	left: 0;
 	position: fixed;
-	top: 10rem;
+	top: 8rem;
 	transition: opacity 0.2s linear;
 	width: 100%;
 	z-index: 9999;
