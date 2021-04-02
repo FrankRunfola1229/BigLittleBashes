@@ -128,6 +128,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 #containerText {
 	margin-top:2rem;
 	margin-bottom: 2rem;
+	padding-bottom: 1rem;;
 	width: 60vw;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
 }
