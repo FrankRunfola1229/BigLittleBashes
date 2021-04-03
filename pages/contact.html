@@ -4,14 +4,19 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <title>Big Little Bashes</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,7 +31,6 @@
     <nav id="mainNav" class="navbar-light fixed-top">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
-
         </button>
 
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
@@ -40,75 +44,97 @@
         </div>
     </nav>
 
-
     <div class="containerContact">
 
-        <form method="post" action="/mail/contactMe.php">
 
-            <label>Name*</label>
-            <input name="name" placeholder="Type Here">
 
-            <label>Email*</label>
-            <input name="email" type="email" placeholder="Type Here">
-
-            <label>Message</label>
-            <textarea name="message" placeholder="Type Here"></textarea>
-
-            <label>*What is 2+2? (Anti-spam)</label>
-            <input name="human" placeholder="Type Here">
-
-            <div class="container-contact100-form-btn">
-                <input id="submit" name="submit" type="submit" value="Submit">
-                <button class="btn-primary btn"> Send Email </button>
-            </div>
-        </form>
-    </div>
-    <!--
         <div class="wrap-contact100">
-            <form method="POST" action="/mail/contactMe.php" class="contact100-form validate-form">
+
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Email Address</label>
+                        <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Phone Number</label>
+                        <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group pb-2">
+                    <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">
+                        Send
+                    </button>
+                </div>
+            </form>
+
+            <!--
+            <form name="sentMessage" id="contactForm" class="contact100-form validate-form">
                 <span class="contact100-form-title">
                     Contact Us
                 </span>
 
-                <div class="wrap-input100 validate-input mt-4" data-validate="Name is required">
-                    <input class="input100" type="text" name="name" placeholder="Full Name">
-                    <span class="focus-input100-1"></span>
-                    <span class="focus-input100-2"></span>
+                <div class="wrap-input100 validate-input mt-4">
+                    <input id="name" class="input100" type="text" name="name" placeholder="Full Name" required="required" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="Email">
-                    <span class="focus-input100-1"></span>
-                    <span class="focus-input100-2"></span>
+                <div class="wrap-input100 validate-input">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid Phone Number is required">
-                    <input class="input100" type="text" name="phoneNumber" placeholder="Phone Number">
-                    <span class="focus-input100-1"></span>
-                    <span class="focus-input100-2"></span>
+                <div class="wrap-input100 validate-input">
+                    <input id="message" class="input100" type="tel" name="phone" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
-                    <textarea class="input100" name="message" placeholder="Your Message"></textarea>
-                    <span class="focus-input100-1"></span>
-                    <span class="focus-input100-2"></span>
+                <div class="wrap-input100 validate-input">
+                    <textarea id="email" class="input100" name="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
                 </div>
 
-                <div class="contact100-form-checkbox">
-                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
-                    <label class="label-checkbox100" for="ckb1">
-                        Send copy to my-email
-                    </label>
+                <div class="control-group">
+                    <label>*What is 2+2? (Anti-spam)</label>
+                    <input name="human" placeholder="Type Here">
                 </div>
 
-                <div class="container-contact100-form-btn">
-                    <input id="submit" name="submit" type="submit" value="Submit">
-                    <button class="btn-primary btn"> Send Email </button>
+                <br>
+                <div id="success"></div>
+                <div class="form-group pb-2">
+                    <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">
+                        Send
+                    </button>
                 </div>
             </form>
-        </div>
 
         -->
+
+
+        </div>
+    </div>
+
+
 
 
 
@@ -121,7 +147,8 @@
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <!-- Instagram -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating m-
+                1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
                 <!-- Linkedin -->
                 <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rohini-runfola-4138649" role="button"><i class="fab fa-linkedin-in"></i></a>
             </section>
@@ -133,10 +160,20 @@
         </div>
     </footer>
 
+    <!--------------------------------------------------------------------------->
+    <!--                    Bootstrap core JavaScript -->
+    <!--------------------------------------------------------------------------->
+    <script src="/vendor/jquery/jquery.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
     <!-- Contact Form JavaScript -->
     <script src="/assets/js/wow.js"></script>
     <script src="/assets/js/jqBootstrapValidation.js"></script>
-
+    <script src="/assets/js/contact_me.js"></script>
 
 </body>
 

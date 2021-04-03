@@ -398,9 +398,11 @@ input, textarea {
 
 
   #submit {
+	background-color:blueviolet;
+	
+	color:white;
     width:127px;
     height:38px;
-    background:url(images/submit.jpg);
     text-indent:-9999px;
     border:none;
     margin-top:20px;
@@ -685,19 +687,3 @@ input, textarea {
 	  opacity: 1;
 	}
   }
-  
-
-
-
-
-
-
-  
-  
-
-  
-
-
-
-
-  
