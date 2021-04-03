@@ -907,4 +907,4 @@
         $(":input").not("[type=image],[type=submit]").jqBootstrapValidation.apply(this, arguments);
     };
 
-})(jQuery);
+});

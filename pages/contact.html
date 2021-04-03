@@ -17,22 +17,7 @@
 
 <body>
 
-    <!--***************************************  -->
-    <!--              PAGE LOADER               -->
-    <!-- *************************************** -->
-    <!--https://css-tricks.com/lets-make-a-fancy-but-uncomplicated-page-loader/-->
-    <div class="preloader">
-        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0">
-            <circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2">
-                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite" />
-                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite" />
-            </circle>
-            <circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2">
-                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite" />
-                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite" />
-            </circle>
-        </svg>
-    </div>
+
 
     <!--***************************************  -->
     <!--              NAVBAR                     -->
@@ -58,13 +43,34 @@
 
     <div class="containerContact">
 
+        <form method="post" action="/mail/contactMe.php">
+
+            <label>Name*</label>
+            <input name="name" placeholder="Type Here">
+
+            <label>Email*</label>
+            <input name="email" type="email" placeholder="Type Here">
+
+            <label>Message</label>
+            <textarea name="message" placeholder="Type Here"></textarea>
+
+            <label>*What is 2+2? (Anti-spam)</label>
+            <input name="human" placeholder="Type Here">
+
+            <div class="container-contact100-form-btn">
+                <input id="submit" name="submit" type="submit" value="Submit">
+                <button class="btn-primary btn"> Send Email </button>
+            </div>
+        </form>
+    </div>
+    <!--
         <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
+            <form method="POST" action="/mail/contactMe.php" class="contact100-form validate-form">
                 <span class="contact100-form-title">
                     Contact Us
                 </span>
 
-                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <div class="wrap-input100 validate-input mt-4" data-validate="Name is required">
                     <input class="input100" type="text" name="name" placeholder="Full Name">
                     <span class="focus-input100-1"></span>
                     <span class="focus-input100-2"></span>
@@ -72,6 +78,12 @@
 
                 <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <input class="input100" type="text" name="email" placeholder="Email">
+                    <span class="focus-input100-1"></span>
+                    <span class="focus-input100-2"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Valid Phone Number is required">
+                    <input class="input100" type="text" name="phoneNumber" placeholder="Phone Number">
                     <span class="focus-input100-1"></span>
                     <span class="focus-input100-2"></span>
                 </div>
@@ -90,18 +102,14 @@
                 </div>
 
                 <div class="container-contact100-form-btn">
-                    <button class="btn-primary btn">
-                        Send Email
-                    </button>
+                    <input id="submit" name="submit" type="submit" value="Submit">
+                    <button class="btn-primary btn"> Send Email </button>
                 </div>
             </form>
         </div>
-    </div>
 
+        -->
 
-
-    </div>
-    </div>
 
 
 
@@ -126,11 +134,10 @@
     </footer>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/wow.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/jqBootstrapValidation.js"></script>
 
-    <script src="/assets/js/script.js"></script>
+
 </body>
 
 </html>
