@@ -5,9 +5,11 @@ let message = document.querySelector("textarea#message")
 let firstName = name; // For Success/Failure Message
 let sendMessageButton = document.querySelector("#sendMessageButton");
 
+
 (function () {
 
-    ("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+    ("#contactForm input,#contactForm textarea").jqBootstrapValidation(
+      {
         preventSubmit: true,
         submitError: ($form, event, errors) => { },  // additional error messages or events
 
@@ -20,7 +22,7 @@ let sendMessageButton = document.querySelector("#sendMessageButton");
             sendMessageButton.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
             document.ajax(
-                {
+            {
                     url: "/mail/contact_me.php",
                     type: "POST",
                     data: { name: name, phone: phone, email: email, message: message },
@@ -43,7 +45,7 @@ let sendMessageButton = document.querySelector("#sendMessageButton");
                     complete: () => {
                         setTimeout(() => {document.prop("disabled", false); }, 1000); // Re-enable submit button when AJAX call is complete
                     }
-                });
+             });
         },
         filter: () => { return document.is(":visible"); },
     });
@@ -54,8 +56,9 @@ let sendMessageButton = document.querySelector("#sendMessageButton");
     });
 });
 
-
+/*********************************************/
 /*When clicking on Full hide fail/success boxes */
+/*********************************************/
 window.onload = () => {
     document.querySelector('#name').focus(() => {
         document.querySelector('#success').html('');
