@@ -1,3 +1,10 @@
+let name = document.querySelector("input#name")
+let email = document.querySelector("input#email")
+let phone = document.querySelector("input#phone")
+let message = document.querySelector("textarea#message")
+let firstName = name; // For Success/Failure Message
+let sendMessageButton = document.querySelector("#sendMessageButton");
+
 (function () {
 
     ("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -7,16 +14,9 @@
         submitSuccess: ($form, event) => {
             event.preventDefault(); // prevent default submit behaviour
 
-            let name = document.querySelector("input#name")
-            let email = document.querySelector("input#email")
-            let phone = document.querySelector("input#phone")
-            let message = document.querySelector("textarea#message")
-            let firstName = name; // For Success/Failure Message
-
             if (firstName.indexOf(' ') >= 0)  // Check for white space in name for Success/Fail message
                 firstName = name.split(' ').slice(0, -1).join(' ');
-
-            let sendMessageButton = document.querySelector("#sendMessageButton");
+           
             sendMessageButton.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
             document.ajax(
@@ -41,9 +41,7 @@
                         $('#contactForm').trigger("reset");  //clear all fields
                     },
                     complete: () => {
-                        setTimeout(() => {
-                            document.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-                        }, 1000);
+                        setTimeout(() => {document.prop("disabled", false); }, 1000); // Re-enable submit button when AJAX call is complete
                     }
                 });
         },
