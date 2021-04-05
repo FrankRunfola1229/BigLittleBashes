@@ -8,8 +8,6 @@ let submitHandler = e => {
     const formDataString = JSON.stringify(formDataObject)
 
     try {
-        console.log(`Begin submitHeader()...`)
-
         fetch(url, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -17,9 +15,7 @@ let submitHandler = e => {
         })
             .then(res => { res.json(); console.log(`res.json()=${res.json()}`) })
             .then(data => { messages.innerHTML += `Success: ${data}` })
-            .catch(err => { messages.innerHTML += `Fail: ${err}` })
-
-        console.log(`END submitHeader()...`)
+            .catch(err => { messages.innerHTML += `Fail: ${err}`})
     }
     catch (err) {
         console.log(`${err}`)
