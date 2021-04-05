@@ -116,14 +116,27 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 	}
 }
 
+
+#coverPic img{
+	height: 100%;
+	width: 100%;
+	margin: 10rem auto 5rem auto;
+	display: block;
+}
+
+
 /***********************************************************/
 /*                      CONTAINERS                         */
 /***********************************************************/
 .container {
-    margin-top: 2rem;
-    width: 90vw;
-	padding:0rem 2rem;
+    width: 60vw;
+	padding:0rem 1rem;
  }
+ @media only screen and (max-width: 650px) {
+	.container{
+		width:90vw;
+	}
+}
 
 
 #containerText {
@@ -174,7 +187,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 	}
 }
 @media only screen and (max-width: 800px) {
-	.card, #containerContent{
+	.card, #containerContent,containerText{
 		width:80vw;
 	}
 }
