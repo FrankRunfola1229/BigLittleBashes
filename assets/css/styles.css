@@ -237,32 +237,6 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 /********************************************************************************************************/
 
 
-
-form {
-	width:459px;
-	margin:0 auto;
-}
-
-label {
-	display:block;
-	margin-top:20px;
-	letter-spacing:2px;
-}
-
-input, textarea {
-	width:439px;
-	height:27px;
-	background:#efefef;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
-}
-
 	input:focus, textarea:focus {
 		border:1px solid #97d6eb;
 	}
