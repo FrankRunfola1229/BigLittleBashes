@@ -4,19 +4,17 @@ let errorMsg = (err) => { status.innerHTML = `<div class="alert alert-danger  te
 let status = document.querySelector("#status")
 let headers = '"Content-Type": "application/json"'
 
-let url = "/mail/contactMe.php"
+let url = "/mail/hello.php"
 
 let clickHandler = e => {
-    const formData = new FormData(e.target)
-    const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
 
-    fetch(url, { method: "POST", headers: { headers }, body: formDataString })
-        .then(response => response.text())                // get Promise response in JSON
-        .then(data => { alert(data); successMsg(data) })
+    fetch(url, { method: "GET", headers: { headers } })
+        .then(res => res.text())                // get Promise response in JSON
+        .then(text => successMsg(text))
         .catch(err => errorMsg(err))
 }
 
 window.onload = function () {
     successMsg("..WAITING...")
-    document.querySelector("#contact-form").addEventListener("submit", clickHandler)
+    document.querySelector("#hello").addEventListener("click", clickHandler)
 };

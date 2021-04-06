@@ -73,11 +73,31 @@
             </div>
 
             <div class="form-group my-3">
-                <input type="submit" class="btn btn-success btn-send" value="Send">
+                <label>*What is 2+2? (Anti-spam)</label>
+                <input id="human" name="human" placeholder="Type Here" required="required" data-error="Please, answer the question.">
             </div>
 
+            <div class="form-group my-3">
+                <input type="submit" name="submit" class="btn btn-primary btn-send" value="Send">
+            </div>
         </form>
     </div>
+
+    <div id="status" class="container text-center" style="width:25vw;">
+        <!--  JAVSCRIPT WILL POPULATE WITH FETCH CALL TO WEB SERVER MAIL.PHP file  -->
+    </div>
+
+
+
+    <!--TESTING-->
+
+    <div style="margin-top:2rem;"></div>
+
+    <div class="container text-center">
+        <button id="hello" type="button" class="btn btn-primary">hello</button>
+    </div>
+
+    <div style="margin-top:5rem;"></div>
 
 
 
@@ -209,7 +229,7 @@
         </div>
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
+            Â© 2021 Copyright:
             <a class="text-white" href="https://biglittlebashes.com/">BigLittleBashes</a>
         </div>
     </footer>
