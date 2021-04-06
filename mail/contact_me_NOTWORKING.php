@@ -29,7 +29,6 @@ if (isset($_POST['email'])) {
     // $email_message .= "Phone: " . clean_string($phone) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
 
-
     $header = "From: $email\n";
     $header .= "Reply-To: $email";
 
