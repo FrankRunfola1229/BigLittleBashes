@@ -1,22 +1,28 @@
-let successMsg = (data) => { status.innerHTML = `<div class="alert alert-primary  text-center" role="alert">${data}</div>` }
-let errorMsg = (err) => { status.innerHTML = `<div class="alert alert-danger  text-center" role="alert">${err}</div>` }
 
-let status = document.querySelector("#status")
-let headers = '"Content-Type": "application/json"'
 
-let url = "/mail/contactMe.php"
+const formElem = document.querySelector("#contact-form")
 
-let clickHandler = e => {
-    const formData = new FormData(e.target)
-    const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
+formElem.addEventListener("submit",
 
-    fetch(url, { method: "POST", headers: { headers }, body: formDataString })
-        .then(response => response.text())                // get Promise response in JSON
-        .then(data => { alert(data); successMsg(data) })
-        .catch(err => errorMsg(err))
-}
+    async function callClickHandler(e) {
 
-window.onload = function () {
-    successMsg("..WAITING...")
-    document.querySelector("#contact-form").addEventListener("submit", clickHandler)
-};
+        const url = "/mail/contactMe.php"
+        const formData = new FormData(e.target)
+        const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
+
+        alert(`FETCHING .. ${url} ${headers} ${formDataString}`)
+
+        try {
+            const response = await fetch(url, { method: "POST", headers: { 'Content-Type': 'application/json', }, body: formDataString })
+            const responseText = await response.text
+            console.log(responseText);
+            alert(`fetched ${responseText}`)
+            document.querySelector("#result").innerHTML = `<div class="alert alert-primary  text-center" role="alert">${responseText}</div>`
+        }
+
+        catch (e) {
+            alert(`ERROR ${e}`)
+        }
+
+
+    });
