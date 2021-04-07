@@ -2,27 +2,29 @@
 
 const formElem = document.querySelector("#contact-form")
 
+const createMessage = (status) => {
+    let elem = document.createElement("div");   // Create a <button> element
+    elem.innerHTML = `<div class="alert alert-primary text-center" role = "alert">${status}</div>`
+    formElem.appendChild(elem);
+}
+
 formElem.addEventListener("submit",
 
-    async function callClickHandler(e) {
+    function callClickHandler(e) {
 
         const url = "/mail/contactMe.php"
         const formData = new FormData(e.target)
         const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
 
-        alert(`FETCHING .. ${url} ${headers} ${formDataString}`)
-
         try {
-            const response = await fetch(url, { method: "POST", headers: { 'Content-Type': 'application/json', }, body: formDataString })
-            const responseText = await response.text
-            console.log(responseText);
-            alert(`fetched ${responseText}`)
-            document.querySelector("#result").innerHTML = `<div class="alert alert-primary  text-center" role="alert">${responseText}</div>`
+            const response = fetch(url, { method: 'POST', body: formDataString })
+
+            const responseText = response.text == null ? "Message Sent!" : response.text
+            alert(`fetched ${responseText} `)
+            createMessage(responseText)
         }
 
         catch (e) {
-            alert(`ERROR ${e}`)
+            alert(`ERROR ${e} `)
         }
-
-
     });
