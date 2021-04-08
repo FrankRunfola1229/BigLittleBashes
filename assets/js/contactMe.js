@@ -5,12 +5,16 @@ const url = "/mail/contactMe.php"
 let resp = "";
 let respText = "";
 
-let successMsg = (msg) => {
-    if (msg.search("spam") > 0)
-        status.innerHTML = `<div class="alert alert-warning  text-center" role="alert">${msg}</div>`
-    else
-        status.innerHTML = `<div class="alert alert-primary  text-center" role="alert">${msg}</div>`
+let showMsg = (msg) => {
+    let alertType = ""
+
+    if (respText === "") { msg = "Couldn't reach Mail Server ..."; alertType = "danger" }
+    else if (msg.search("spam") > 0) alertType = "warning"
+    else alertType = "primary" //success!
+
+    status.innerHTML = `<div class="alert alert-${alertType} text-center" role="alert">${msg}</div>`
 }
+
 let errorMsg = (err) => {
     status.innerHTML = `<div class="alert alert-danger  text-center" role="alert">${err}</div>`
 }
@@ -23,11 +27,11 @@ async function submitHandler(e) {
     try {
         resp = await fetch(url, { method: 'POST', body: formDataString }) // wait for promise to return
         respText = await resp.text() // make sure to assign vars globally, or assignment will precede promise return!!!
-        successMsg(respText)
+
+        showMsg(respText)
     }
 
     catch (err) { errorMsg(err) }
-
     finally { e.target.reset(); }
 }
 
