@@ -1,30 +1,34 @@
-
-
 const formElem = document.querySelector("#contact-form")
+let status = document.querySelector("#status")
+const url = "/mail/contactMe.php"
 
-const createMessage = (status) => {
-    let elem = document.createElement("div");   // Create a <button> element
-    elem.innerHTML = `<div class="alert alert-primary text-center" role = "alert">${status}</div>`
-    formElem.appendChild(elem);
+let resp = "";
+let respText = "";
+
+let successMsg = (msg) => {
+    if (msg.search("spam") > 0)
+        status.innerHTML = `<div class="alert alert-warning  text-center" role="alert">${msg}</div>`
+    else
+        status.innerHTML = `<div class="alert alert-primary  text-center" role="alert">${msg}</div>`
+}
+let errorMsg = (err) => {
+    status.innerHTML = `<div class="alert alert-danger  text-center" role="alert">${err}</div>`
 }
 
-formElem.addEventListener("submit",
+async function submitHandler(e) {
+    e.preventDefault(); //  prevent it from submitting the form since it's fetched manually
+    const formData = new FormData(e.target)
+    const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
 
-    function callClickHandler(e) {
+    try {
+        resp = await fetch(url, { method: 'POST', body: formDataString }) // wait for promise to return
+        respText = await resp.text() // make sure to assign vars globally, or assignment will precede promise return!!!
+        successMsg(respText)
+    }
 
-        const url = "/mail/contactMe.php"
-        const formData = new FormData(e.target)
-        const formDataString = JSON.stringify(Object.fromEntries(formData.entries()))
+    catch (err) { errorMsg(err) }
 
-        try {
-            const response = fetch(url, { method: 'POST', body: formDataString })
+    finally { e.target.reset(); }
+}
 
-            const responseText = response.text == null ? "Message Sent!" : response.text
-            alert(`fetched ${responseText} `)
-            createMessage(responseText)
-        }
-
-        catch (e) {
-            alert(`ERROR ${e} `)
-        }
-    });
+formElem.addEventListener("submit", submitHandler)

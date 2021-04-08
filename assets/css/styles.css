@@ -345,7 +345,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 	}
   }
   
-
+.contact-form
 
 
   /*------------------------------------------------------------------
@@ -683,4 +683,5 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 
 .cardShadow{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
 .width50{width: 50%;}
