@@ -88,16 +88,51 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 /****** NAVIGATION  DROP DOWN MENU *****/ 
 .navbar-nav {
-    padding-left: 1.2rem;
 	padding-bottom: 0;
 	margin-top: 2rem;
 	background-color:whitesmoke;
-	width: 30%;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
+	width: 20%;
 	color: black;
 }
 
+
+
+@media only screen and (max-width: 800px) {
+	span {
+		font-size: .8rem;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.navbar-nav {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.navbar-nav {
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.navbar-nav {
+		width: 43%;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.navbar-nav {
+		width: 45%;
+	}
+}
+
+
 /****** Overwrite _navbar.scss nav links in drop down menu *****/ 
-.navbar-light .navbar-nav .nav-link{ color: black;}
+.navbar-light .navbar-nav .nav-link{ 
+	padding: .6rem 1rem;
+	color: black;
+}
 
 .navbar-light .navbar-toggler{
 	color: black;
@@ -122,6 +157,10 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 	width: 100%;
 	margin: 10rem auto 5rem auto;
 	display: block;
+}
+
+#navbarNavAltMarkup i{
+	margin-right:1rem;
 }
 
 
@@ -149,7 +188,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 #containerContent {
 	width:40vw;
-	margin: 14rem auto 3rem auto;	
+	margin: 11rem auto 3rem auto;	
 }
 
 
@@ -211,21 +250,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 /*                      PAGE LOADER                        */
 /***********************************************************/
 
-.preloader {
-	align-items: center;
-	background: rgb(23, 22, 22);
-	display: flex;
-	height: 100vh;
-	justify-content: center;
-	left: 0;
-	position: fixed;
-	top: 8rem;
-	transition: opacity 0.2s linear;
-	width: 100%;
-	z-index: 9999;
-  }
 
-  
 
 
 
@@ -250,7 +275,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
   /*---------------------------------------------*/
   a {
 	  font-family: JosefinSans-Bold;
-	  font-size: 14px;
+	  font-size: 1rem;
 	  line-height: 1.7;
 	  color: #666666;
 	  margin: 0px;
