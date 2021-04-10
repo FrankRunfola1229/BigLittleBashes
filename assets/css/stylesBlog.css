@@ -188,7 +188,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 .card-img-top{
 	width:95%;
-	margin:1rem auto;
+	margin: .5rem auto 0 auto;
 }
 
 .card .cardPackage {
@@ -216,4 +216,4 @@ footer img{
 		font-family: 'HelloHoney';
 		text-decoration: none;
 	}
-	
+		

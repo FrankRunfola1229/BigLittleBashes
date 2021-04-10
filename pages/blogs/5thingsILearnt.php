@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Big Little Bashes</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <!--<link rel="stylesheet" href="/assets/css/animate.css">-->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
-
+    <?php include("../templates/head.php"); ?>
 </head>
 
 <body>
@@ -23,49 +10,13 @@
     <!--***************************************  -->
     <!--              NAVBAR                     -->
     <!-- *************************************** -->
-    <nav id="mainNav" class="navbar-light fixed-top">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+    <?php include("../templates/nav.php"); ?>
 
-            <div class="navbar-nav ml-auto">
-
-                <a class="nav-item nav-link" aria-current="page" href="/index.html">
-                    <span><i class="bi bi-house-door"></i>Home</span>
-                    <span class="sr-only">(current)</span>
-                    <hr style="margin: .1rem auto">
-                </a>
-
-                <a class="nav-item nav-link" href="/pages/ourStory.html">
-                    <span><i class="far fa-address-card"></i>Our Story</span>
-                    <hr style="margin: .1rem auto">
-                </a>
-
-                <a class="nav-item nav-link" href="/pages/process.html">
-                    <span><i class="far fa-list-alt"></i>Our Process</span>
-                    <hr style="margin: .1rem auto">
-                </a>
-
-                <a class="nav-item nav-link" href="/pages/packages.html">
-                    <span><i class="bi bi-bag"></i>Packages</span>
-                    <hr style="margin: .1rem auto">
-                </a>
-
-                <a class="nav-item nav-link" href="/pages/blog.html">
-                    <span><i class="fab fa-blogger"></i>Blog</span>
-                    <hr style="margin: .1rem auto">
-                </a>
-
-                <a class="nav-item nav-link" href="/pages/contact.html">
-                    <span><i class="bi bi-telephone"></i>Contact Us</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-
-    <div style="margin-top:12rem;"></div>
+    <div class="container" style="margin: 10rem auto 1rem auto;">
+        <a href="../blog.php">
+            <button type="button" class="btn btn-secondary">Back</button>
+        </a>
+    </div>
 
 
     <!--*********************************************************************-->
@@ -80,12 +31,12 @@
             <div class="row">
                 <div class="col-xs-6 mb-4">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                        <img class="card-img-top" src="/assets/img/5ThingsILearnt/1.jpeg" class="img-fluid" />
+                        <img class="card-img-top" src="/assets/img/blogs/5ThingsILearnt/1.jpeg" class="img-fluid" />
                     </div>
                 </div>
                 <div class="col-xs-6 mb-4">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                        <img class="card-img-top" src="/assets/img/5ThingsILearnt/2.jpeg" class="img-fluid" />
+                        <img class="card-img-top" src="/assets/img/blogs/5ThingsILearnt/2.jpeg" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -121,9 +72,9 @@
                 <li>
                     We planned this shoot on a day calling for overcast, surprisingly, the sun did end up popping out a few times, and I recommend investing in some kind of object (we used a large painting lying around) to hold up
                     against the sun to create a shadow. Thank you, especially to my husband, Frank, the muscle of Big Little Bashes to hold his arms up continuously for almost 45 mins.
-                </li>
+                    <p>And one BONUS lesson:</p>
 
-                <p>And one BONUS lesson:</p>
+                </li>
 
 
                 <li>
@@ -138,37 +89,15 @@
     </div>
 
 
+
+
     <!--*********************************************************************-->
     <!--                             FOOTER                                  -->
     <!--*********************************************************************-->
-    <footer class="bg-light text-center my-5 text-white">
-        <!-- Grid container -->
-        <div class="container py-4 my-4 pb-0">
-            <section class="mb-4">
+    <?php include("../templates/footer.php"); ?>
 
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-                <!-- Instagram -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
-                <!-- Linkedin -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rohini-runfola-4138649" role="button"><i class="fab fa-linkedin-in"></i></a>
-            </section>
-        </div>
 
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-            <div>
-                <span> © 2021 Copyright:</span>
-            </div>
-            <div>
-                <span>
-                    <a href="https://biglittlebashes.com/">
-                        Big Little Bashes
-                    </a>
-                </span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/assets/js/script.js"></script>
+    <!-- <script src="/assets/js/wow.js"></script>-->
 </body>
 
 </html>
