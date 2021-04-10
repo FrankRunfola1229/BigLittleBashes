@@ -67,7 +67,7 @@
                 <li>Vendor recommendations & bookings: You'll receive a list of the vendors I recommend as well as help with contacting and booking them</li>
                 <li>Payment management via a structured payment plan</li>
                 <li>Create a Mood Board to capture your vision and expectations </li>
-                <li>Attend all meetings with other vendors/services providers with you or your behalf</li>
+                <li>Attend all meetings with other vendors/services providers with you or on your behalf</li>
                 <li>Detailed day-of timeline management and execution</li>
                 <li>Rehearsal coordination. This includes booking and organizing the rehearsal</li>
                 <li>Day of coordination with additional on-site assistant (if needed) to ensure everything runs smoothly</li>
@@ -102,9 +102,9 @@
         </div>
         <div class="card-body">
             <img class="card-img-top" src="/assets/img/packages/setTable.jpeg">
-            <h3>Customized styled shoots - limted only by our combined imagination!</h3>
+            <h3>Customized events - limted only by our combined imagination!</h3>
             <ul class="packageBullet">
-                <li>Customized suite of services on your special event or styled shoot needs</li>
+                <li>Personalized suite of services for your special event or styled shoot needs</li>
             </ul>
         </div>
     </div>

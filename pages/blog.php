@@ -16,7 +16,6 @@
     <div style="margin-top:10rem;"></div>
 
 
-
     <div class="container" style="padding:0;">
         <section class="text-center">
             <h1 class="mb-3">Latest posts </h1>
