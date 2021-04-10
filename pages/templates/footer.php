@@ -2,8 +2,8 @@
     <!-- Grid container -->
     <div class="container py-4 my-4 pb-0">
         <section class="mb-4">
-
-            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/102240548642832/posts/102241398642747/?d=n&substory_index=0" role="button"><i class="fab fa-facebook-f"></i></a>
             <!-- Instagram -->
             <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
             <!-- Linkedin -->
@@ -11,16 +11,31 @@
         </section>
     </div>
 
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+    <!-- GitHub -->
+
+    <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <div>
-            <span> © 2021 Copyright:</span>
+            <div>
+                <span> © 2021 Copyright:</span>
+            </div>
+
+            <div>
+                <span> <a href=" https://biglittlebashes.com/"> Big Little Bashes </a></span>
+            </div>
         </div>
-        <div>
-            <span>
-                <a href="https://biglittlebashes.com/">
-                    Big Little Bashes
-                </a>
-            </span>
+
+        <div class="my-2">
+            <div class="my-2">
+                <span styl="color:grey">Developed By: Frank Runfola</span>
+            </div>
+
+            <div style="margin-top:1rem; margin-bottom:0">
+                <span>
+                    <a id="github" class="btn btn-primary btn-floating m-0" href="https://github.com/FrankRunfola1229" role="button"><i class="fab fa-github"></i></a>
+                </span>
+            </div>
         </div>
+
     </div>
+
 </footer>

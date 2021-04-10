@@ -104,35 +104,48 @@ span{
 	font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 875px) {
+	.navbar-nav {
+		width: 25%;
+	}
+}
+
+
 @media only screen and (max-width: 800px) {
 	.navbar-nav {
 		width: 27%;
 	}
 }
 
+
 @media only screen and (max-width: 650px) {
 	span{font-size: 1rem;}
 	
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 775px) {
 	.navbar-nav {
-		width: 32%;
+		width: 33%;
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 475px) {
 	.navbar-nav {width: 38%;}
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 405px) {
 	.navbar-nav {width: 45%;}
 	span{font-size: .9rem;}
 }
 
+@media only screen and (max-width: 320px) {
+	.navbar-nav {
+		width: 50%;
+	}
+}
+
 @media only screen and (max-width: 300px) {
-	.navbar-nav {width: 46%;}
-	span{font-size: .8rem;}
+	.navbar-nav {width: 58%;}
 
 }
 
@@ -610,13 +623,23 @@ width:100%;
 }
 
 footer{
- font-size: 1.5rem; text-decoration: none;
+	font-weight: 500;
+ 	font-size: 2.1rem;
+	line-height: 1.2rem;
 }
 
 footer a{
-	font-size: 1.8rem;	color:black;
+	font-size:2rem;
+	color:black;
 	font-family: 'HelloHoney';
 	text-decoration: none;
+}
+
+#github{
+	padding:.5rem;
+	line-height: .5rem;
+	background-color: black;
+	border-color:black;
 }
 
 
@@ -625,3 +648,4 @@ ol li{
 	margin: 1rem;
 	line-height: 1.7rem;
 }
+

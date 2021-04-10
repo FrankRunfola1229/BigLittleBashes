@@ -23,12 +23,12 @@
             </a>
 
             <a class="nav-item nav-link" href="/pages/packages.php">
-                <span><i class="bi bi-bag"></i>Packages</span>
+                <span><i class="bi bi-bag"></i>Our Packages</span>
                 <hr style="margin: .1rem auto">
             </a>
 
             <a class="nav-item nav-link" href="/pages/blog.php">
-                <span><i class="fab fa-blogger"></i>Blog</span>
+                <span><i class="fab fa-blogger"></i>Rohini's Blog</span>
                 <hr style="margin: .1rem auto">
             </a>
 

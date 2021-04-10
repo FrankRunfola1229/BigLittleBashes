@@ -13,7 +13,7 @@
     <?php include("./templates/nav.php"); ?>
 
 
-    <div style="margin-top:11rem;"></div>
+    <div style="margin-top:10rem;"></div>
 
 
 

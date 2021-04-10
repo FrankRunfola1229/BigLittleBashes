@@ -28,12 +28,12 @@
       touch to the affair.
     </p>
     <p>
-      We pride ourselves in executing unique and creative concepts and themes. We especially enjoy bringing multi-cultural and out-of-the-box concepts to life in our event design and collateral. Currently our planning packages
+      We pride ourselves in executing unique and creative concepts or themes. We especially enjoy bringing multi-cultural and out-of-the-box concepts to life in our event design and collateral. Currently our planning packages
       include Birthdays, Weddings, Showers and Cultural events. We are happy to customize the suite of services provided to work within your vision and expectations.
     </p>
     <p>
       Our growing network in the party planning industry is one of our strongest assets. While we are happy to provide thoughtful recommendations on vendors, we are always willing to partner with new ones to deliver your
-      ideas.Thank you for taking the time to take a look at our website!
+      ideas. Thank you for taking the time to take a look at our website!
     </p>
     <h1>
       We look forward to celebrating<br>
