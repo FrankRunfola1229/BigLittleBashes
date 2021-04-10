@@ -183,6 +183,7 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 .card{
 	width:100%;
+	box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
 }
 
 .card-img-top{
@@ -195,3 +196,24 @@ a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0p
 
 }
 
+
+
+  
+/***********************************************************/
+/*                     FOOTER                              */
+/***********************************************************/
+
+footer img{
+	width:100%;
+	}
+	
+	footer{
+	 font-size: 1.5rem; text-decoration: none;
+	}
+	
+	footer a{
+		font-size: 1.8rem;	color:black;
+		font-family: 'HelloHoney';
+		text-decoration: none;
+	}
+	

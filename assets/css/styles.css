@@ -28,6 +28,10 @@ h1 { font-size: 3.5em; }
 	h1 { font-size: 3em; }
 }
 
+
+@media only screen and (max-width: 550px) {
+	h1 { font-size: 2.1em; }
+}
 @media only screen and (max-width: 420px) {
 	h1 { font-size: 1.7em; }
 }
@@ -158,13 +162,6 @@ span{
 }
 
 
-#coverPic img{
-	height: 100%;
-	width: 100%;
-	margin: 10rem auto 5rem auto;
-	display: block;
-}
-
 #navbarNavAltMarkup i{
 	margin-right:1rem;
 }
@@ -185,18 +182,22 @@ span{
 
 
 #containerText {
-	margin-top:2rem;
-	margin-bottom: 2rem;
-	padding-bottom: 1rem;;
+	margin:.5rem auto;
+	padding: .5rem 1rem;
 	width: 60vw;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
 }
 
 #containerContent {
-	width:40vw;
-	margin: 11rem auto 3rem auto;	
-}
+	width:30vw;
+	margin: 10rem auto 1rem auto;
+	text-align: center;
 
+	
+}
+#containerContent img{
+	width:70%;
+}
 
 /***********************************************************/
 /*                      CARD                               */
@@ -214,7 +215,7 @@ span{
 }
 
 .card-body {
-    padding: 1rem 2rem;
+    padding:0;
 }
 
  .cardPackage {
@@ -239,14 +240,10 @@ span{
 }
 @media only screen and (max-width: 700px) {
 	.card, #containerContent,#containerText{
-		width:85vw;
-	}
-}
-@media only screen and (max-width: 600px) {
-	.card, #containerContent,#containerText{
 		width:90vw;
 	}
 }
+
 
 
 
@@ -442,10 +439,6 @@ span{
 /*              END    Contact                             */
 /***********************************************************/
 
-
-  /*------------------------------------------------------------------
-  [ Focus Input ]*/
-  
   .focus-input100-1, 
   .focus-input100-2 {
 	display: block;
@@ -604,3 +597,32 @@ span{
 .cardShadow{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 
 .width50{width: 50%;}
+
+
+
+
+  
+/***********************************************************/
+/*                     FOOTER                              */
+/***********************************************************/
+
+footer img{
+width:100%;
+}
+
+footer{
+ font-size: 1.5rem; text-decoration: none;
+}
+
+footer a{
+	font-size: 1.8rem;	color:black;
+	font-family: 'HelloHoney';
+	text-decoration: none;
+}
+
+
+
+ol li{
+	margin: 1rem;
+	line-height: 2rem;
+}
