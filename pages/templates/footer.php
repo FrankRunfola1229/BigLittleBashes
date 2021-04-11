@@ -13,7 +13,7 @@
 
     <!-- GitHub -->
 
-    <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.2);">
         <div>
             <div>
                 <span> © 2021 Copyright:</span>

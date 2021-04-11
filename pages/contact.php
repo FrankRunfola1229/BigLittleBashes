@@ -67,9 +67,9 @@
                 <button type="submit" class="confetti-button btn-xl">Send!</button>
             </div>
         </form>
-
-
     </div>
+
+    <div style="margin-top:6rem;"></div>
 
 
     <!--*********************************************************************-->

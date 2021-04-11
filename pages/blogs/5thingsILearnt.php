@@ -24,7 +24,7 @@
     <!--*********************************************************************-->
     <div id="containerText" class="container">
 
-        <h2>The Blooming Friendship</h2>
+        <h2>5 Things I learnt From My 1st Styled Shoot</h2>
 
         <section class="text-center">
 
@@ -49,30 +49,31 @@
         <!--*********************************************************************-->
         <div class="container " style="padding:1rem .3rem; width:97%">
             <ol>
-                <li> You cannot create a balloon arch in under 2 hours if you've never done one before. Leave it to the professionals. @buffaloballoonco @jillianelizabeth_creates, you're going to have to work your magic for me
-                    next time!
+                <li> You cannot create a balloon arch in under 2 hours if you've never done one before.
                 </li>
 
                 <li>
-                    Always have a back up plan for every aspect of your planning. Here's your chance to make use of your inner (or outer) pessimist! Here are some examples I had to think of: Alternate to the balloon arch,
-                    replacement table linen, other outfits (kids are MESSY), back-up location/venue to account for weather,....
+                    Always have a back up plan for every aspect of your planning. Here's your chance to make use of your inner (or outer) pessimist! Here are some examples I had to think of: Alternative to the balloon arch,
+                    replacement table linen, other outfits (kids are MESSY), back-up location/venue to account for weather....
                 </li>
 
                 <li>
-                    Invest in the right photographer. I am NOT a photographer, but my ability to see a "shot" in my head might give me an added advantage.I like to plan and set up in terms of "pictures". However, I do not own or
-                    know how to use a digital camera, and wish that we had picked a real photographer to bring this event to life. Could have really used @kiran and @tashography for this!
+                    Invest in a professional photographer! I am NOT a photographer, but my ability to see a "shot" in my head might give me an added advantage. I like to plan and set up in terms of "pictures". However, I do not own or
+                    know how to use a digital camera, and wish that we had picked a real photographer to bring this event to life.
                 </li>
 
                 <li>
                     While kids are cute and sweet, they're harder to direct. It was easier for us to divide the shoot into 2 parts. We first shot all the details, set up and cookies. We then took a break, got the kids dressed and
-                    then let them at it. We tried to get the most natural and candid shots of the kids, genuinely having a good time. It's always easiest to get kids to do things if you have sweet treats as "incentives". We then
+                    then let them at it. We tried to get the most natural and candid shots of the kids genuinely having a good time. It's always easiest to get kids to do things if you have sweet treats as "incentives". We then
                     put the camera down, and read the books together as the finale. Much caffeine was consumed in this entire endeavour.
                 </li>
 
                 <li>
-                    We planned this shoot on a day calling for overcast, surprisingly, the sun did end up popping out a few times, and I recommend investing in some kind of object (we used a large painting lying around) to hold up
-                    against the sun to create a shadow. Thank you, especially to my husband, Frank, the muscle of Big Little Bashes to hold his arms up continuously for almost 45 mins.
-                    <p>And one BONUS lesson:</p>
+                    We planned this shoot on a day calling for overcast. However, the sun did end up popping out a few times, and I recommend investing in some kind of object (we used a large painting lying around) to hold up
+                    against the sun to create a shadow. Thank you, especially to my husband, Frank, the "muscle" of Big Little Bashes to hold his arms up continuously for almost 45 mins.
+                    <p style="margin-top:1.5rem">
+                        And one BONUS lesson:
+                    </p>
 
                 </li>
 
@@ -89,7 +90,7 @@
     </div>
 
 
-
+    <div style="margin-top:5rem;"></div>
 
     <!--*********************************************************************-->
     <!--                             FOOTER                                  -->

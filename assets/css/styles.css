@@ -217,12 +217,8 @@ span{
 /***********************************************************/
 
 
-.card {
-	width: 60vw; 
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 .card, .cardPackage {
-	width: 60vw; 
+	width: 50vw; 
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -231,7 +227,7 @@ span{
 }
 
  .cardPackage {
-	margin: 0 auto 3rem auto;
+	margin: 0 auto 2rem auto;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -27,7 +27,7 @@
     </div>
 
     <div class="card-body">
-      <img class="card-img-top" src="/assets/img/coverPic/aboutMe.jpeg" alt="Card image cap">
+      <img id="aboutMePic" class="card-img-top" src="/assets/img/coverPic/aboutMe.jpeg" alt="Card image cap">
       <hr>
       <p>
         Hi there, I'm Rohini Runfola and I am the Owner and Lead Event Curator for Big Little Bashes. I am an MBA graduate from the University at Buffalo, and have 8+ years experience working as a Vice President in the world's
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-
+  <br>
   <!--*********************************************************************-->
   <!--                             FOOTER                                  -->
   <!--*********************************************************************-->
