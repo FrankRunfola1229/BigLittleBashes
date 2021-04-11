@@ -1,0 +1,20 @@
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW PWPROTECTID:W6bl1u6lL5
+#AuthType Basic
+#AuthName "Restricted Access"
+#AuthUserFile /home/u444736813/domains/biglittlebashes.com/public_html/.htpasswd
+#Require valid-user
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE W6bl1u6lL5:PWPROTECTID
+
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:biglittlebashes.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?biglittlebashes.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:biglittlebashes.com
