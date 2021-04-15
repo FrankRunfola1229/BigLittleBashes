@@ -1,23 +1,7 @@
 <nav id="mainNav" class="navbar-light fixed-top">
-
-
-    <div class="myFlex">
-
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <button id="myButton">
-            <img src="/assets/img/icons/cannon.jpeg">
-        </button>
-
-
-
-    </div>
-
-
-
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
         <div class="navbar-nav ml-auto">

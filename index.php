@@ -11,7 +11,7 @@
   <!--***************************************  -->
   <!--              NAVBAR                     -->
   <!-- *************************************** -->
-  <?php include("./pages/templates/nav.php"); ?>
+  <?php include("./pages/templates/navIndex.php"); ?>
 
 
   <div id="containerContent">
