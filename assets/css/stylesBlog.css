@@ -9,6 +9,8 @@
 
  .helloHoney{font-family: 'HelloHoney';}
 
+ 
+a {	font-family: JosefinSans-Bold; }
 
 h1{
 	text-align: center;
@@ -64,6 +66,8 @@ ol, ul {
     padding-left: 0rem;
 	text-align: left;
 }
+
+
 
 /***********************************************************/
 /*                      NAVIGATION                         */
@@ -185,6 +189,12 @@ span{
 #navbarNavAltMarkup i{
 	margin-right:1rem;
 }
+/***********************************************************/
+/*                END  NAVIGATION                         */
+/***********************************************************/
+
+
+
 
 
 
@@ -225,7 +235,9 @@ span{
 	margin:10rem;
 
 }
-
+/***********************************************************/
+/*                 END  CONTAINERS                         */
+/***********************************************************/
 
 
   

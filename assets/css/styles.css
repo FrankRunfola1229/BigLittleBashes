@@ -85,10 +85,30 @@ ol, ul {
 a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
 
 /****** NAVIGATION Collapse Button *****/ 
-.navbar-toggler{
+.navbar-toggler {
 	margin-top: 3.5rem;
-	margin-left: 1rem;	
+	margin-left: .65rem;
 }
+
+.myFlex{
+	display: flex;
+	justify-content: space-between;
+}
+ #myButton{
+	margin-top: 3.5rem;
+	margin-right: .65rem;
+	padding:0rem;
+	border:.3px black;
+ }
+
+ #myButton:hover {
+	box-shadow: 0 0 3px;
+ }
+ #myButton img{
+	width: 40px;
+	height: 40px;
+	border:.5px;
+ }
 
 /****** NAVIGATION  DROP DOWN MENU *****/ 
 .navbar-nav {
@@ -159,11 +179,16 @@ span{
 /*** NAVBAR Toggle button ***/
 .navbar-light .navbar-toggler{
 	color: rgb(26, 22, 22);
-	border: 1px solid black;
+	border: .2px solid black;
 	background-color: white;
 }
 
-.navbar-toggler {padding:.4rem;}
+.navbar-toggler {
+	padding:.2rem;
+	line-height: .2;
+	border:0;
+}
+
 
 #navIcon {height: 60px; width: 60;}
 
@@ -272,18 +297,11 @@ span{
 /********************************************************************************************************/
 /*   Example from http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php/                   
 /********************************************************************************************************/
-
-
 	input:focus, textarea:focus {
 		border:1px solid #97d6eb;
 	}
 
 
-
-
-
-
-  /*---------------------------------------------*/
   a {
 	  font-family: JosefinSans-Bold;
 	  font-size: 1rem;
@@ -292,8 +310,8 @@ span{
 	  margin: 0px;
 	  transition: all 0.4s;
 	  -webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	-moz-transition: all 0.4s;
+	  -o-transition: all 0.4s;
+	  -moz-transition: all 0.4s;
   }
   
   a:focus {

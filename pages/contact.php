@@ -79,7 +79,7 @@
 
     <script src="/assets/js/wow.js"></script>
     <script src="/assets/js/contactMe.js"></script>
-    <script src="/assets/js/confetti.js"></script>
+    <script src="/assets/js/confettiContact.js"></script>
 
 </body>
 

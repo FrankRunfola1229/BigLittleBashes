@@ -102,7 +102,7 @@
         </div>
         <div class="card-body">
             <img class="card-img-top" src="/assets/img/packages/setTable.jpeg">
-            <h3>Customized events - limted only by our combined imagination!</h3>
+            <h3>Customized events - limited only by our combined imagination!</h3>
             <ul class="packageBullet">
                 <li>Personalized suite of services for your special event or styled shoot needs</li>
             </ul>

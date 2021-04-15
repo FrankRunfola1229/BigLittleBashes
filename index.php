@@ -14,7 +14,6 @@
   <?php include("./pages/templates/nav.php"); ?>
 
 
-
   <div id="containerContent">
     <img src="/assets/img/coverPic/trans.jpeg" alt="...">
   </div>
@@ -42,20 +41,24 @@
     <br>
   </div>
 
+
+
+
+  <h1>Canvas Confetti</h1>
+
+  <div class="container">
+
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+
   <br>
   <!--*********************************************************************-->
   <!--                             FOOTER                                  -->
   <!--*********************************************************************-->
   <?php include("./pages/templates/footer.php"); ?>
 
-  <script src="./assets/js/wow.js">
-  </script>
-  
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d5266164cb5b457890a27a5ae42e1db4"}'>
-  </script>
-  <!-- End Cloudflare Web Analytics -->
-  
+  <script src="/assets/js/confettiCannon.js"></script>
+
 
 </body>
 

@@ -25,7 +25,9 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card cardPackage text-center">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img class="card-img-top" src="/assets/img/blogs/theBloomingFriendship/1.jpeg" class=" img-fluid" />
+                            <a href="/pages/blogs/bloomingFriendship.php">
+                                <img class="card-img-top" src="/assets/img/blogs/theBloomingFriendship/1.jpeg" class=" img-fluid" />
+                            </a>
                         </div>
                         <div class="card-body">
                             <h1>The Blooming Friendship</h1>
@@ -38,7 +40,9 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card cardPackage text-center">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img class="card-img-top" src="/assets/img/blogs/5ThingsILearnt/1.jpeg" class=" img-fluid" />
+                            <a href="/pages/blogs/5thingsILearnt.php">
+                                <img class="card-img-top" src="/assets/img/blogs/5ThingsILearnt/1.jpeg" class=" img-fluid" />
+                            </a>
                         </div>
                         <div class="card-body">
                             <h1>5 Things I learnt From My 1st Styled Shoot</h1>
@@ -50,7 +54,9 @@
                 <div class="col-lg-4 col-md-6 mb-4 ">
                     <div class="card cardPackage text-center">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img class="card-img-top" src="/assets/img/blogs/LiteraTeaParty/1.jpeg" class="img-fluid" />
+                            <a href="/pages/blogs/literaTeaParty.php">
+                                <img class="card-img-top" src="/assets/img/blogs/LiteraTeaParty/1.jpeg" class="img-fluid" />
+                            </a>
                         </div>
                         <div class="card-body">
                             <h1>Litera-Tea Party!</h1>
