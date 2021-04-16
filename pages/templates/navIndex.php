@@ -1,16 +1,23 @@
 <nav id="mainNav" class="navbar-light fixed-top">
 
-    <div class="myFlex">
 
-        <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+
+    <div id="navBarButtons">
+
+        <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+            <img src="/assets/img/icons/hamburger.jpeg">
         </button>
 
-        <button id="myButton">
-            <img src="/assets/img/icons/cannon.jpeg">
+        <button id="cannonButton" class="flex">
+
+            <div> Click Me </div>
+
+            <div> <img src="/assets/img/icons/cannon2.jpeg"></div>
         </button>
 
     </div>
+
+
 
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 

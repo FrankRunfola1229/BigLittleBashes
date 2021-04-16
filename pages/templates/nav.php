@@ -1,9 +1,14 @@
 <nav id="mainNav" class="navbar-light fixed-top">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+    <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+        <img src="/assets/img/icons/hamburger.jpeg">
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
+    <button id="cannonButton" class="flex">
+        <div> Click Me </div>
+        <div> <img src="/assets/img/icons/cannon2.jpeg"></div>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
 
             <a class="nav-item nav-link" aria-current="page" href="/index.php">

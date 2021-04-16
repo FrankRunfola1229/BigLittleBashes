@@ -55,7 +55,7 @@ function getCode(name) {
 }
 
 
-let myButton = document.querySelector('#myButton');
+let myButton = document.querySelector('#cannonButton');
 
 
 let fireClickEvent = (e) => {

@@ -41,16 +41,6 @@
     <br>
   </div>
 
-
-
-
-  <h1>Canvas Confetti</h1>
-
-  <div class="container">
-
-    <button type="button" class="btn btn-primary">Primary</button>
-  </div>
-
   <br>
   <!--*********************************************************************-->
   <!--                             FOOTER                                  -->
