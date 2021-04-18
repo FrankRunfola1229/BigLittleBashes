@@ -47,7 +47,6 @@
   <!--*********************************************************************-->
   <?php include("./pages/templates/footer.php"); ?>
 
-  <script src="/assets/js/confettiCannon.js"></script>
 
 
 </body>

@@ -39,3 +39,16 @@
     </div>
 
 </footer>
+
+<script src="/assets/js/confettiCannon.js"></script>
+
+<!-- COLLAPSE NAV COLLAPSE BUTTON ON CLICK IN THE WINDOW -->
+<script>
+    let collapseButton = document.querySelector("#navbarNavAltMarkup")
+
+    let collapseNavIfOpen = (e) => {
+        if (collapseButton.classList.contains("show"))
+            collapseButton.classList.remove("show")
+    }
+    window.addEventListener("click", collapseNavIfOpen)
+</script>

@@ -11,3 +11,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
+
+
+<!--DEMO PAGE ONLY, NO BUILDS. Must fake out module.exports support, define a global `module` so sourc can use it-->
+<script>
+    window.module = {};
+</script>
+
+<script src="/assets/js/confettiCannonCoreCode.js"></script>
+
+<!--define the `module.exports` as the `confetti` global, the way that the cdn distributed file would-->
+<script>
+    window.confetti = module.exports;
+</script>
