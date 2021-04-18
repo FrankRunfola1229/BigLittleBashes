@@ -12,7 +12,7 @@
     <!-- *************************************** -->
     <?php include("../templates/nav.php"); ?>
 
-    <div class="container" style="margin: 10rem auto 1rem auto;">
+    <div class="container" style="margin: 7rem auto 1rem auto;">
         <a href="../blog.php">
             <button type="button" class="btn btn-secondary">Back</button>
         </a>

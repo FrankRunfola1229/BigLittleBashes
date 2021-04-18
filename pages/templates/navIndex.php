@@ -6,11 +6,9 @@
         </button>
         <button id="cannonButton" class="button btn btn-dark">
             <div>Make it rain!</div>
-            <!-- <div> <img src="/assets/img/icons/cannon2.jpeg"></div>-->
+            <div> <img src="/assets/img/icons/cannonPink.jpeg"></div>
         </button>
     </div>
-
-
 
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
