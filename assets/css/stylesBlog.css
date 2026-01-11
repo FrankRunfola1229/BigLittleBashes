@@ -1,0 +1,321 @@
+*, *::after, *::before {box-sizing: border-box; }
+
+  html{	font-family: Montserrat;}
+
+@font-face {
+	font-family: 'HelloHoney';
+	src: url('/assets/fonts/hello\ honey.otf'); /* IE9 Compat Modes */
+  }
+
+ .helloHoney{font-family: 'HelloHoney';}
+
+ 
+a {	font-family: JosefinSans-Bold; }
+
+h1{
+	text-align: center;
+	font-family: 'HelloHoney';
+	margin-top: .1rem;
+	padding-top: .5em;
+}
+h2, h3, h4, h5, h6{
+	text-align: center;
+	font-family: 'HelloHoney';
+	margin: 1rem auto 1.5rem auto;
+}
+
+h1 { font-size: 3.5em; }
+
+@media only screen and (max-width: 1200px) {
+	h1 { font-size: 3em; }
+}
+
+@media only screen and (max-width: 420px) {
+	h1 { font-size: 1.7em; }
+}
+@media only screen and (max-width: 370px) {
+	h1 { font-size: 1.7em; }
+}
+@media only screen and (max-width: 370px) {
+	h1 { font-size: 1.4em; }
+}
+@media only screen and (max-width: 310px) {
+	h1 { font-size: 1.2em; }
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	font-weight: 300;
+  }
+
+p::first-letter {
+	font-size: 300%;
+	color: pink;
+	font-weight: 600;
+}
+  
+li{	padding-left: .5rem;}
+
+
+.packageBullet li{
+	padding-bottom: .5rem;;
+}
+
+ol, ul {
+    padding-left: 0rem;
+	text-align: left;
+}
+
+
+
+/***********************************************************/
+/*                      NAVIGATION                         */
+/***********************************************************/
+#mainNav {
+	height:155px;
+	background-image: url("/assets/img/blb/BLB_Rounded\ Tagline.jpeg"), url("/assets/img/blb/BLB_confetti.jpeg");
+	background-size: 130px 118px, cover;
+	background-position:center;	
+	background-repeat:no-repeat, no-repeat;
+	background-color: #FEFEFA;
+	font-weight: 450;	
+}
+
+a:hover{box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+
+/****** NAVIGATION Collapse Button *****/ 
+
+#navBarButtons{
+	display: flex;
+	justify-content: space-between;
+}
+
+button{
+	background-color: white;	
+	-webkit-box-shadow: 2px 2px 3px 2px #A7A7A7; 
+	box-shadow: 2px 2px 3px 2px #A7A7A7;
+	margin-top: 3.5rem;
+}
+#navBarButtons .btn{
+	padding: .25rem;
+}
+button:hover {
+	box-shadow: 2px 2px 8px 2px purple;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+ }
+ 
+ .navbar-toggler:focus,
+ .navbar-toggler:active,
+ .navbar-toggler-icon:focus {
+	 outline: none;
+	 box-shadow: 2px 2px 8px 2px purple;
+ }
+
+#hamburgerButton {	
+	margin-left: .65rem;
+	border-radius: 60%;
+}
+#hamburgerButton img{
+	width: 30x;
+	height: 26px;
+ }
+
+ #cannonButton{
+	margin-right: .68rem;
+	font-size: .8rem;
+	border-radius: 10%;
+	border-color: transparent;
+	background-color: white;
+	color:black;
+ }
+
+ #cannonButton img{
+	width: 27px;
+	height: 20px;
+ }
+
+
+ #cannonButton:focus,
+ #cannonButton:active {
+ 	box-shadow: 2px 2px 8px 2px purple;
+ }
+
+
+  
+
+ /****** Overwrite _navbar.scss nav links in drop down menu *****/ 
+.navbar-light .navbar-nav .nav-link{ 
+	padding: .5rem 1rem;
+	color: #495057;
+	
+}
+/*** NAVBAR Toggle button ***/
+.navbar-light .navbar-toggler{
+	background-color: white;
+}
+.navbar-toggler{
+	padding:.4rem .5rem;
+	font-size: .8rem;;
+}
+
+/****** NAVIGATION  DROP DOWN MENU *****/ 
+.navbar-nav {
+	padding-bottom: 0;
+	margin-top: 2rem;
+	background-color:whitesmoke;	
+	width: 20%;
+	color: lightgray;
+}
+
+span{	
+	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 875px) {
+	.navbar-nav {
+		width: 25%;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	.navbar-nav {
+		width: 27%;
+	}
+}
+
+
+@media only screen and (max-width: 650px) {
+	span{font-size: 1rem;}
+	
+}
+
+@media only screen and (max-width: 775px) {
+	.navbar-nav {
+		width: 33%;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.navbar-nav {width: 38%;}
+}
+
+@media only screen and (max-width: 405px) {
+	.navbar-nav {width: 45%;}
+	span{font-size: .9rem;}
+}
+
+@media only screen and (max-width: 320px) {
+	.navbar-nav {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.navbar-nav {width: 58%;}
+
+}
+
+
+#navIcon {height: 60px; width: 60;}
+
+@media only screen and (max-width: 350px) {
+	#navIcon{
+		height: 45px;
+		width: 45px;
+	}
+}
+
+
+#navbarNavAltMarkup i{
+	margin-right:1rem;
+}
+
+
+
+/***********************************************************/
+/*                END  NAVIGATION                         */
+/***********************************************************/
+
+
+
+
+
+
+/***********************************************************/
+/*                      CONTAINERS                         */
+/***********************************************************/
+.container {
+    margin-top: 2rem;
+    width: 90vw;
+	padding:0rem 2rem;
+ }
+
+
+#containerText {
+	margin-top:2rem;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;;
+	width: 60vw;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	
+}
+
+#containerContent {
+	width:40vw;
+	margin: 14rem auto 3rem auto;	
+}
+
+.card{
+	width:100%;
+	box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
+}
+
+.card-img-top{
+	width:95%;
+	margin: .5rem auto 0 auto;
+}
+
+.card-img-top:hover{
+	box-shadow: 2px 2px 8px 2px purple;
+}
+
+.card .cardPackage {
+	margin:10rem;
+
+}
+/***********************************************************/
+/*                 END  CONTAINERS                         */
+/***********************************************************/
+
+
+  
+/***********************************************************/
+/*                     FOOTER                              */
+/***********************************************************/
+
+footer img{
+	width:100%;
+	}
+	
+	footer{
+	 font-size: 1.5rem; text-decoration: none;
+	}
+	
+	footer a{
+		font-size: 1.8rem;	color:black;
+		font-family: 'HelloHoney';
+		text-decoration: none;
+	}
+
+	#github{
+		padding:.5rem;
+		line-height: .5rem;
+		background-color: black;
+		border-color:black;
+	}
+		
