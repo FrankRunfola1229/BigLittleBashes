@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Big Little Bashes</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="../assets/css/stylesBlog.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
+
+<!--DEMO PAGE ONLY, NO BUILDS. Must fake out module.exports support, define a global `module` so sourc can use it-->
+<script>
+    window.module = {};
+</script>
+
+<script src="../assets/js/confettiCannonCoreCode.js"></script>
+
+<!--define the `module.exports` as the `confetti` global, the way that the cdn distributed file would-->
+<script>
+    window.confetti = module.exports;
+</script>
+</head>
+
+<body>
+
+    <!--***************************************  -->
+    <!--              NAVBAR                     -->
+    <!-- *************************************** -->
+    <nav id="mainNav" class="navbar-light fixed-top">
+
+    <div id="navBarButtons">
+        <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+            <img src="../assets/img/icons/hamburger.jpeg">
+        </button>
+        <button id="cannonButton" class="button btn btn-dark">
+            <div>Make it rain!</div>
+            <div> <img src="../assets/img/icons/cannonPink.jpeg"></div>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+
+            <a class="nav-item nav-link" aria-current="page" href="../index.html">
+                <span><i class="bi bi-house-door"></i>Home</span>
+                <span class="sr-only">(current)</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="ourStory.html">
+                <span><i class="far fa-address-card"></i>Our Story</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="process.html">
+                <span><i class="far fa-list-alt"></i>Our Process</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="packages.html">
+                <span><i class="bi bi-bag"></i>Our Packages</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="blog.html">
+                <span><i class="fab fa-blogger"></i>Rohini's Blog</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="contact.html">
+                <span><i class="bi bi-telephone"></i>Contact Us</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <div style="margin-top:10rem;"></div>
+
+
+    <div class="container" style="padding:0;">
+        <section class="text-center">
+            <h1 class="mb-3">Latest posts </h1>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card cardPackage text-center">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="blogs/bloomingFriendship.html">
+                                <img class="card-img-top" src="../assets/img/blogs/theBloomingFriendship/1.jpeg" class=" img-fluid" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h1>The Blooming Friendship</h1>
+                            <a href="blogs/bloomingFriendship.html" class="btn btn-primary">Read</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card cardPackage text-center">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="blogs/5thingsILearnt.html">
+                                <img class="card-img-top" src="../assets/img/blogs/5ThingsILearnt/1.jpeg" class=" img-fluid" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h1>5 Things I learnt From My 1st Styled Shoot</h1>
+                            <a href="blogs/5thingsILearnt.html" class="btn btn-primary">Read</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 ">
+                    <div class="card cardPackage text-center">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="blogs/literaTeaParty.html">
+                                <img class="card-img-top" src="../assets/img/blogs/LiteraTeaParty/1.jpeg" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h1>Litera-Tea Party!</h1>
+                            <a href="blogs/literaTeaParty.html" class="btn btn-primary">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <br>
+    <!--*********************************************************************-->
+    <!--                             Pagination                              -->
+    <!--*********************************************************************-->
+    <!--
+    <nav class="my-5">
+        <ul class="pagination pagination-circle justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    -->
+
+
+    <!--*********************************************************************-->
+    <!--                             FOOTER                                  -->
+    <!--*********************************************************************-->
+    <footer class="bg-light text-center my-5 text-white">
+    <!-- Grid container -->
+    <div class="container py-4 my-4 pb-0">
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/102240548642832/posts/102241398642747/?d=n&substory_index=0" role="button"><i class="fab fa-facebook-f"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
+            <!-- Linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rohini-runfola-4138649" role="button"><i class="fab fa-linkedin-in"></i></a>
+        </section>
+    </div>
+
+    <!-- GitHub -->
+
+    <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div>
+            <div>
+                <span> © 2021 Copyright:</span>
+            </div>
+
+            <div>
+                <span> <a href=" https://biglittlebashes.com/"> Big Little Bashes </a></span>
+            </div>
+        </div>
+
+        <div class="my-2">
+            <div class="my-2">
+                <span styl="color:grey">Developed By: Frank Runfola</span>
+            </div>
+
+            <div style="margin-top:1rem; margin-bottom:0">
+                <span>
+                    <a id="github" class="btn btn-primary btn-floating m-0" href="https://github.com/FrankRunfola1229" role="button"><i class="fab fa-github"></i></a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="../assets/js/confettiCannon.js"></script>
+
+<!-- COLLAPSE NAV COLLAPSE BUTTON ON CLICK IN THE WINDOW -->
+<script>
+    let collapseButton = document.querySelector("#navbarNavAltMarkup")
+
+    let collapseNavIfOpen = (e) => {
+        if (collapseButton.classList.contains("show"))
+            collapseButton.classList.remove("show")
+    }
+    window.addEventListener("click", collapseNavIfOpen)
+</script>
+
+    <script src="../assets/js/wow.js"></script>
+</body>
+
+</html>

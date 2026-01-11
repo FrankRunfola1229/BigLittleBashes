@@ -1,6 +1,6 @@
 const formElem = document.querySelector("#contact-form")
 let status = document.querySelector("#status")
-const url = "/mail/contactMe.php"
+const url = new URL("../mail/contactMe.html", window.location.href).toString();
 
 let resp = "";
 let respText = "";

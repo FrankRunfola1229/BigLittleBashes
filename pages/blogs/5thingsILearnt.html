@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Big Little Bashes</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="../../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8a8132f90c.js" crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M79QRHHFM1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M79QRHHFM1');
+</script>
+
+<!--DEMO PAGE ONLY, NO BUILDS. Must fake out module.exports support, define a global `module` so sourc can use it-->
+<script>
+    window.module = {};
+</script>
+
+<script src="../../assets/js/confettiCannonCoreCode.js"></script>
+
+<!--define the `module.exports` as the `confetti` global, the way that the cdn distributed file would-->
+<script>
+    window.confetti = module.exports;
+</script>
+</head>
+
+<body>
+
+    <!--***************************************  -->
+    <!--              NAVBAR                     -->
+    <!-- *************************************** -->
+    <nav id="mainNav" class="navbar-light fixed-top">
+
+    <div id="navBarButtons">
+        <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+            <img src="../../assets/img/icons/hamburger.jpeg">
+        </button>
+        <button id="cannonButton" class="button btn btn-dark">
+            <div>Make it rain!</div>
+            <div> <img src="../../assets/img/icons/cannonPink.jpeg"></div>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+
+            <a class="nav-item nav-link" aria-current="page" href="../../index.html">
+                <span><i class="bi bi-house-door"></i>Home</span>
+                <span class="sr-only">(current)</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="../ourStory.html">
+                <span><i class="far fa-address-card"></i>Our Story</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="../process.html">
+                <span><i class="far fa-list-alt"></i>Our Process</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="../packages.html">
+                <span><i class="bi bi-bag"></i>Our Packages</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="../blog.html">
+                <span><i class="fab fa-blogger"></i>Rohini's Blog</span>
+                <hr style="margin: .1rem auto">
+            </a>
+
+            <a class="nav-item nav-link" href="../contact.html">
+                <span><i class="bi bi-telephone"></i>Contact Us</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <div class="container" style="margin: 7rem auto 1rem auto;">
+        <a href="../blog.html">
+            <button type="button" class="btn btn-secondary">Back</button>
+        </a>
+    </div>
+
+
+    <!--*********************************************************************-->
+    <!--                        Blog Images                                  -->
+    <!--*********************************************************************-->
+    <div id="containerText" class="container">
+
+        <h2>5 Things I learnt From My 1st Styled Shoot</h2>
+
+        <section class="text-center">
+
+            <div class="row">
+                <div class="col-xs-6 mb-4">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img class="card-img-top" src="../../assets/img/blogs/5ThingsILearnt/1.jpeg" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-xs-6 mb-4">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img class="card-img-top" src="../../assets/img/blogs/5ThingsILearnt/2.jpeg" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--*********************************************************************-->
+        <!--                            Blog Content                             -->
+        <!--*********************************************************************-->
+        <div class="container " style="padding:1rem .3rem; width:97%">
+            <ol>
+                <li> You cannot create a balloon arch in under 2 hours if you've never done one before.
+                </li>
+
+                <li>
+                    Always have a back up plan for every aspect of your planning. Here's your chance to make use of your inner (or outer) pessimist! Here are some examples I had to think of: Alternative to the balloon arch,
+                    replacement table linen, other outfits (kids are MESSY), back-up location/venue to account for weather....
+                </li>
+
+                <li>
+                    Invest in a professional photographer! I am NOT a photographer, but my ability to see a "shot" in my head might give me an added advantage. I like to plan and set up in terms of "pictures". However, I do not own or
+                    know how to use a digital camera, and wish that we had picked a real photographer to bring this event to life.
+                </li>
+
+                <li>
+                    While kids are cute and sweet, they're harder to direct. It was easier for us to divide the shoot into 2 parts. We first shot all the details, set up and cookies. We then took a break, got the kids dressed and
+                    then let them at it. We tried to get the most natural and candid shots of the kids genuinely having a good time. It's always easiest to get kids to do things if you have sweet treats as "incentives". We then
+                    put the camera down, and read the books together as the finale. Much caffeine was consumed in this entire endeavour.
+                </li>
+
+                <li>
+                    We planned this shoot on a day calling for overcast. However, the sun did end up popping out a few times, and I recommend investing in some kind of object (we used a large painting lying around) to hold up
+                    against the sun to create a shadow. Thank you, especially to my husband, Frank, the "muscle" of Big Little Bashes to hold his arms up continuously for almost 45 mins.
+                    <p style="margin-top:1.5rem">
+                        And one BONUS lesson:
+                    </p>
+
+                </li>
+
+
+                <li>
+                    Your personal tribe is your greatest strength and resource. It was an amazing opportunity to work with my long-time friend Kristina on this event. I'd like to acknowledge my in-laws who helped with babysitting
+                    and some pre-event set up. My parents and husband are always my biggest emotional support and sound-board. Also, big thank you to my friend Nicholle, who let me borrow her childrens' play table and chairs for
+                    this set up.
+                </li>
+
+            </ol>
+        </div>
+
+    </div>
+
+
+    <div style="margin-top:5rem;"></div>
+
+    <!--*********************************************************************-->
+    <!--                             FOOTER                                  -->
+    <!--*********************************************************************-->
+    <footer class="bg-light text-center my-5 text-white">
+    <!-- Grid container -->
+    <div class="container py-4 my-4 pb-0">
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/102240548642832/posts/102241398642747/?d=n&substory_index=0" role="button"><i class="fab fa-facebook-f"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/biglittlebashes/" role="button"><i class="fab fa-instagram"></i></a>
+            <!-- Linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rohini-runfola-4138649" role="button"><i class="fab fa-linkedin-in"></i></a>
+        </section>
+    </div>
+
+    <!-- GitHub -->
+
+    <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div>
+            <div>
+                <span> © 2021 Copyright:</span>
+            </div>
+
+            <div>
+                <span> <a href=" https://biglittlebashes.com/"> Big Little Bashes </a></span>
+            </div>
+        </div>
+
+        <div class="my-2">
+            <div class="my-2">
+                <span styl="color:grey">Developed By: Frank Runfola</span>
+            </div>
+
+            <div style="margin-top:1rem; margin-bottom:0">
+                <span>
+                    <a id="github" class="btn btn-primary btn-floating m-0" href="https://github.com/FrankRunfola1229" role="button"><i class="fab fa-github"></i></a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="../../assets/js/confettiCannon.js"></script>
+
+<!-- COLLAPSE NAV COLLAPSE BUTTON ON CLICK IN THE WINDOW -->
+<script>
+    let collapseButton = document.querySelector("#navbarNavAltMarkup")
+
+    let collapseNavIfOpen = (e) => {
+        if (collapseButton.classList.contains("show"))
+            collapseButton.classList.remove("show")
+    }
+    window.addEventListener("click", collapseNavIfOpen)
+</script>
+
+
+    <!-- <script src="../../assets/js/wow.js"></script>-->
+</body>
+
+</html>

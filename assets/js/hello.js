@@ -6,7 +6,7 @@ let result = document.querySelector("#result");
 
 let headers = '"Content-Type": "application/json"';
 
-let url = "/mail/hello.php";
+let url = new URL("../mail/hello.html", window.location.href).toString();
 
 let clickHandler = e => {
 
